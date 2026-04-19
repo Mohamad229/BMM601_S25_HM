@@ -1,0 +1,171 @@
+/* 
+  main.css: Core theming, colors, and layout for GenAI Multimedia Site
+*/
+
+:root {
+    /* Color Palette */
+    --bg-primary: #0B1020;
+    --bg-secondary: #11182D;
+    --surface-card: rgba(255, 255, 255, 0.06);
+    --border-glow: rgba(0, 194, 255, 0.25);
+
+    --accent-cyan: #00C2FF;
+    --accent-purple: #6D5EF7;
+    --accent-teal: #17F1D1;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #B6C2D9;
+}
+
+html, body { overflow-x: hidden; width: 100%; position: relative; }
+body.dark-theme {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Typography Colors */
+.text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+.text-accent-cyan {
+    color: var(--accent-cyan);
+}
+
+.text-accent-purple {
+    color: var(--accent-purple);
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism & UI Components */
+.glass-card {
+    background: var(--surface-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--border-glow);
+    box-shadow: 0 8px 32px rgba(0, 194, 255, 0.15);
+}
+
+/* Navigation */
+.custom-navbar {
+    background: rgba(11, 16, 32, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--text-primary);
+}
+
+/* Buttons */
+.badge-custom {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(109, 94, 247, 0.15);
+    color: var(--accent-purple);
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(109, 94, 247, 0.3);
+}
+
+.btn-primary-gradient {
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+    color: white;
+    border: none;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary-gradient:hover {
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 194, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-outline-glass {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+}
+
+.btn-outline-glass:hover {
+    color: white;
+    border-color: var(--accent-cyan);
+    background: rgba(0, 194, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Base structural fixes */
+.border-light-subtle {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.glass-section {
+    background-color: var(--bg-secondary);
+}
+
+.glass-footer {
+    background: var(--bg-primary);
+}
+
+/* Hero Graphic Placeholder styles */
+.hero-visual-wrapper {
+    perspective: 1000px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/10;
+    background: #11182D;
+    object-fit: cover;
+}
+
+.glow-orb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(109, 94, 247, 0.5) 0%, rgba(0, 0, 0, 0) 70%);
+    filter: blur(40px);
+    z-index: -1;
+    border-radius: 50%;
+}

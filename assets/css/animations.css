@@ -1,0 +1,52 @@
+/* animations.css: Custom animations for GenAI Multimedia Site */
+
+/* Keyframes for Hero Floating Effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px) scale(1.0);
+    }
+
+    50% {
+        transform: translateY(-15px) scale(1.02);
+    }
+
+    100% {
+        transform: translateY(0px) scale(1.0);
+    }
+}
+
+.hero-visual-wrapper .hero-img {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    100% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.glow-orb {
+    animation: pulseGlow 8s infinite alternate ease-in-out;
+}
+
+/* Card Hover Lift */
+.feature-card {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(109, 94, 247, 0.2);
+}

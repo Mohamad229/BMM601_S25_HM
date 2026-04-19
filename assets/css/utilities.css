@@ -1,0 +1,40 @@
+/* utilities.css: Additional layout spacing and generic overrides */
+
+/* Container Max-Width Constraint Strategy from Specs */
+.container {
+    max-width: 1140px;
+}
+
+.max-w-reading {
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Spacer utilities */
+.py-96 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 3rem;
+}
+
+/* Image Cover */
+.img-cover {
+    object-fit: cover;
+    width: 100%;
+}
+/* Gallery Hover Effects */
+.group-hover:hover .transition-opacity { opacity: 1 !important; }
+.group-hover:hover img.transition-transform { transform: scale(1.05); }
+.transition-transform { transition: transform 0.4s ease; }
