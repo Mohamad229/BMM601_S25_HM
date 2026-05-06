@@ -45,7 +45,7 @@
             </button>
             <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarNav">
                 <ul class="navbar-nav ms-auto font-inter text-center text-lg-start">
-                    <li class="nav-item"><a class="nav-link py-2 py-lg-0" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link py-2 py-lg-0 active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link py-2 py-lg-0" href="about.html">About & How it Works</a>
                     </li>
                     <li class="nav-item"><a class="nav-link py-2 py-lg-0" href="tools.html">Tools</a></li>
@@ -135,6 +135,91 @@
         </div>
     </section>
 
+    <!-- Featured Media Carousel -->
+    <section class="py-5 border-top border-light-subtle">
+        <div class="container py-4">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="font-poppins fw-bold display-5">Featured Output</h2>
+                <p class="text-secondary font-inter lead">Swipe through some of our best AI-generated examples</p>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-lg-10">
+                    <div id="homeCarousel" class="carousel slide glass-card p-2 shadow-lg" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner rounded-4 overflow-hidden">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="assets/images/slider/1.webp" class="d-block w-100 img-cover" alt="Hero Style"
+                                    style="height: 500px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3 mx-auto"
+                                    style="max-width: 60%;">
+                                    <h5 class="font-poppins text-accent-cyan">Abstract Visualizations</h5>
+                                    <p class="mb-0">Created using DALL-E 3</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="assets/images/slider/2.webp" class="d-block w-100 img-cover" alt="Concept Art"
+                                    style="height: 500px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3 mx-auto"
+                                    style="max-width: 60%;">
+                                    <h5 class="font-poppins text-accent-purple">Cyberpunk Concept Art</h5>
+                                    <p class="mb-0">Generated with Midjourney V6</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="assets/images/slider/3.webp" class="d-block w-100 img-cover" alt="UI Mockup"
+                                    style="height: 500px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3 mx-auto"
+                                    style="max-width: 60%;">
+                                    <h5 class="font-poppins text-accent-teal">UI/UX Layouts</h5>
+                                    <p class="mb-0">Prototyped via Stable Diffusion</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="assets/images/slider/4.webp" class="d-block w-100 img-cover" alt="UI Mockup"
+                                    style="height: 500px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3 mx-auto"
+                                    style="max-width: 60%;">
+                                    <h5 class="font-poppins text-accent-teal">UI/UX Layouts</h5>
+                                    <p class="mb-0">Prototyped via Stable Diffusion</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="assets/images/slider/5.webp" class="d-block w-100 img-cover" alt="UI Mockup"
+                                    style="height: 500px;">
+                                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3 mx-auto"
+                                    style="max-width: 60%;">
+                                    <h5 class="font-poppins text-accent-teal">UI/UX Layouts</h5>
+                                    <p class="mb-0">Prototyped via Stable Diffusion</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Global Footer -->
     <footer class="footer py-5 mt-auto border-top border-light-subtle glass-footer">
         <div class="container">
@@ -176,7 +261,6 @@
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- Custom Scripts -->
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/animations.js"></script>
 </body>
 

@@ -34,7 +34,16 @@
     object-fit: cover;
     width: 100%;
 }
+
 /* Gallery Hover Effects */
-.group-hover:hover .transition-opacity { opacity: 1 !important; }
-.group-hover:hover img.transition-transform { transform: scale(1.05); }
-.transition-transform { transition: transform 0.4s ease; }
+.group-hover:hover .transition-opacity {
+    opacity: 1 !important;
+}
+
+.group-hover:hover img.transition-transform {
+    transform: scale(1.05);
+}
+
+.transition-transform {
+    transition: transform 0.4s ease;
+}

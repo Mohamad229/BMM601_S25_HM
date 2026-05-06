@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             toolCards.forEach(card => {
                 const cat1 = card.getAttribute("data-category");
                 const cat2 = card.getAttribute("data-category2");
-                
+
                 // If filter is 'all', display block. Otherwise, check match for any category.
                 if (filterValue === "all" || cat1 === filterValue || cat2 === filterValue) {
                     card.style.display = "block";

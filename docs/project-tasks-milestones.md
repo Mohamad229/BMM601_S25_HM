@@ -3,7 +3,8 @@
 Based on the technical specification, this document breaks down the website implementation into sequential milestones and actionable tasks. The focus is on ensuring a professional, premium interface with a "dark futuristic educational theme" and delivering all functional and content requirements.
 
 ## Milestone 1: Project Setup & Architecture
-*Goal: Establish the file structure, core dependencies, and initial blank pages.*
+
+_Goal: Establish the file structure, core dependencies, and initial blank pages._
 
 - [x] **Task 1.1:** Create the required directory structure:
   - `assets/css/`
@@ -20,8 +21,9 @@ Based on the technical specification, this document breaks down the website impl
 - [x] **Task 1.4:** Create base CSS files (`main.css`, `utilities.css`, `animations.css`) and link them.
 - [x] **Task 1.5:** Create base JS files (`main.js`, `filters.js`, `gallery.js`, `animations.js`) and link them to the document ends.
 
-## Milestone 2: Design System & Shared Components 
-*Goal: Implement the visual theme, typography, color palette, and reusable UI components.*
+## Milestone 2: Design System & Shared Components
+
+_Goal: Implement the visual theme, typography, color palette, and reusable UI components._
 
 - [x] **Task 2.1:** Define CSS Root Variables:
   - Dark theme backgrounds (`#0B1020`, `#11182D`)
@@ -35,7 +37,8 @@ Based on the technical specification, this document breaks down the website impl
 - [x] **Task 2.4:** Build Global Footer containing Site Logo, Quick Links, and Credits note.
 
 ## Milestone 3: Core Page Structure & Content Implementation
-*Goal: Build the static HTML skeletal structure and layout for each page following the specified grids.*
+
+_Goal: Build the static HTML skeletal structure and layout for each page following the specified grids._
 
 - [x] **Task 3.1:** `index.html` (Home)
   - Hero section (Headline, subheading, CTAs).
@@ -58,7 +61,8 @@ Based on the technical specification, this document breaks down the website impl
   - Lists of tools, AI disclosure text, and media credits.
 
 ## Milestone 4: Multimedia Production & Asset Integration
-*Goal: Generate, refine, compress, and insert AI multimedia assets.*
+
+_Goal: Generate, refine, compress, and insert AI multimedia assets._
 
 - [x] **Task 4.1:** Generate UI Image Assets (Hero visual, section concept art).
   - Prompt for futuristic, high-contrast, cyan/purple themes.
@@ -70,7 +74,8 @@ Based on the technical specification, this document breaks down the website impl
 - [x] **Task 4.4:** Integrate assets into the HTML templates, ensuring responsive scaling (`object-fit: cover`, `img-fluid`) and meaningful `alt` text.
 
 ## Milestone 5: Interaction, Motion Design, & JavaScript Features
-*Goal: Bring the site to life with smooth animations and custom JS interactions.*
+
+_Goal: Bring the site to life with smooth animations and custom JS interactions._
 
 - [x] **Task 5.1:** Initialize AOS across all pages:
   - Add `data-aos="fade-up"` to headings and text chunks.
@@ -84,7 +89,8 @@ Based on the technical specification, this document breaks down the website impl
   - Ensure smooth scrolling for anchor links.
 
 ## Milestone 6: Quality Assurance, Accessibility, & Deployment
-*Goal: Finalize responsive design, test usability, and go live.*
+
+_Goal: Finalize responsive design, test usability, and go live._
 
 - [x] **Task 6.1:** Mobile/Responsive Testing:
   - Verify layout rules for Breakpoints (320px up to 1200px+).

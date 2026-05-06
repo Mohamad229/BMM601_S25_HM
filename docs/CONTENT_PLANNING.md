@@ -27,9 +27,11 @@ pages/
 **Global Navigation (Present on All Pages):**
 
 In header:
+
 - Home, What is AI?, How It Works, Tools, Applications, Pros & Cons, Gallery, Conclusion
 
 In footer:
+
 - Previous page / Next page buttons
 - Copyright and references
 
@@ -822,7 +824,7 @@ Benefits:
 
 [Two-Column Layout with Tailwind]
 <div class="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-  
+
   [Left Column: Advantages]
   <div>
     <h2 class="text-2xl font-bold mb-6 text-green-700">✓ Advantages</h2>
